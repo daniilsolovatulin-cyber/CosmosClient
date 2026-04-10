@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "cosmosclient",
+  "version": "${version}",
+  "name": "Cosmos Client",
+  "description": "A feature-rich utility mod for singleplayer with a cosmic GUI.",
+  "authors": ["CosmosClient"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cosmosclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cosmosclient.CosmosClient"]
+  },
+  "mixins": ["cosmosclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
