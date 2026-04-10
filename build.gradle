@@ -5,7 +5,10 @@ plugins {
 
 version = '1.0.0'
 group = 'com.cosmosclient'
-archivesBaseName = 'CosmosClient'
+
+base {
+	archivesName = 'CosmosClient'
+}
 
 repositories {
 	mavenCentral()
@@ -37,6 +40,6 @@ java {
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}" }
+		rename { "${it}_CosmosClient" }
 	}
 }
