@@ -12,13 +12,14 @@ base {
 
 repositories {
 	mavenCentral()
+	maven { url = "https://maven.fabricmc.net/" }
 }
 
 dependencies {
 	minecraft "com.mojang:minecraft:1.21.11"
 	mappings loom.officialMojangMappings()
 	modImplementation "net.fabricmc:fabric-loader:0.16.9"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:0.110.0+1.21.11"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:0.141.1+1.21.11"
 }
 
 processResources {
